@@ -1,21 +1,21 @@
 public class prob12 {
     private int value; // Instance variable
 
-    // Constructor
-    public prob12(int value) {
+    // Setter
+    public void setVal(int value) {
         this.value = value;
     }
 
-    public int doubleValue() {
-        return value * 2;
+    //Getter
+    public int getVal() {
+        return value;
     }
 
     public static void main(String[] args) {
-        prob12 obj = new prob12(5);
+        prob12 obj = new prob12();
+        obj.setVal(5);
+        int result = obj.getVal();
 
-        // Invoking the instance method
-        int doubledValue = obj.doubleValue();
-
-        System.out.println("The doubled value is: " + doubledValue);
+        System.out.println("The value is: " + result);
     }
 }
