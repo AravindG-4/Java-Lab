@@ -1,13 +1,13 @@
 class Parent {
-	int num = 10
+	static int num = 10;
 } 
 class child1 extends Parent {
-	num = 20;
+	static int num = 20;
 }
 class child2 extends Parent{
-	num = 30;
+	static int num = 30;
 }
-class Multiple extends child1,child {
+class Multiple extends child1,child2 {
 	Multiple() {
 		System.out.println("Success");
 }
